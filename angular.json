@@ -28,7 +28,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/ol/ol.css",
+              "node_modules/angular2-draggable/css/resizable.min.css"
             ],
             "scripts": []
           },
@@ -60,6 +62,14 @@
                   "maximumError": "10kb"
                 }
               ]
+            },
+            "hmr": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.hmr.ts"
+                }
+              ]
             }
           }
         },
@@ -69,6 +79,10 @@
             "browserTarget": "test-ol:build"
           },
           "configurations": {
+            "hmr": {
+              "hmr": true,
+              "browserTarget": "test-ol:build:hmr"
+            },
             "production": {
               "browserTarget": "test-ol:build:production"
             }

@@ -1,0 +1,20 @@
+<input [formControl]="control">
+<input type="date">
+<input type="text" [value]="date | slice:2:5">
+
+
+<fieldset [formGroup]="group">
+    <input type="text" formControlName="first">
+    <input type="text" formControlName="last">
+</fieldset>
+
+<!-- <fieldset [formGroup]="secondGroup">
+    <ul formArrayName="list">
+        <li *ngFor="let listItem of secondGroup.controls.list.controls; let i=index">
+            <input type="text" formControlName={{i}}>
+        </li>
+    </ul>
+</fieldset> -->
+
+<app-sub-form (event)="toConsole($event)" (text)="toConsole($event)"></app-sub-form>
+<a (blur)="toConsole(1)" href="">sdfhsdfkjsdhf</a>

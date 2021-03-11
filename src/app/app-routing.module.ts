@@ -5,6 +5,11 @@ import { MapComponent } from '@modules/map/components/map.component';
 
 const routes: Routes = [
   {
+    path: '',
+    redirectTo: 'form',
+    pathMatch: 'full',
+  },
+  {
     path: 'map',
     component: MapComponent,
   },

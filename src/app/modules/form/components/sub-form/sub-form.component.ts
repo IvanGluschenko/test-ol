@@ -10,6 +10,7 @@ export class SubFormComponent implements OnInit {
   @Output() event: EventEmitter<boolean> = new EventEmitter()
   @Output() text = new EventEmitter<string>()
 
+
   constructor() { }
 
   ngOnInit(): void {

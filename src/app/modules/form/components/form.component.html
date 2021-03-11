@@ -1,4 +1,4 @@
-<input [formControl]="control">
+<!-- <input [formControl]="control">
 <input type="date">
 <input type="text" [value]="date | slice:2:5">
 
@@ -6,7 +6,7 @@
 <fieldset [formGroup]="group">
     <input type="text" formControlName="first">
     <input type="text" formControlName="last">
-</fieldset>
+</fieldset> -->
 
 <!-- <fieldset [formGroup]="secondGroup">
     <ul formArrayName="list">
@@ -16,5 +16,19 @@
     </ul>
 </fieldset> -->
 
-<app-sub-form (event)="toConsole($event)" (text)="toConsole($event)"></app-sub-form>
-<a (blur)="toConsole(1)" href="">sdfhsdfkjsdhf</a>
+<!-- <app-sub-form (event)="toConsole($event)" (text)="toConsole($event)"></app-sub-form>
+<a (blur)="toConsole(1)" href="">sdfhsdfkjsdhf</a> -->
+
+<!-- <p-inputMask [(ngModel)]="date" (ngModelChange)="setTime()" mask="99:99" ></p-inputMask> -->
+<!-- <p-calendar [(ngModel)]="date" timeOnly="true"></p-calendar>
+<input type="text" pKeyFilter="int"> -->
+<!-- <input type="text" [(ngModel)]="string"> -->
+
+<!-- <app-time-input [time]="date" (outDate)="setDate($event)"></app-time-input> -->
+
+<app-time-input [time]="date" (blur)="cons()" (outDate)="setDate($event)" ></app-time-input>
+
+
+
+
+<!-- <p>{{date}}</p> -->

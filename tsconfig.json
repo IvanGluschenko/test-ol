@@ -19,7 +19,8 @@
     ],
     "paths": {
       "@app/*": ["app/*"],
-      "@modules/*": ["app/modules/*"]
+      "@modules/*": ["app/modules/*"],
+      "primeng/*": ["node_modules/primeng-lts/*"]
     }
   },
   
